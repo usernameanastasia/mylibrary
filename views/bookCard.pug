@@ -1,0 +1,66 @@
+doctype
+html(lang="ru")
+    head
+        meta(charset="utf-8")
+        title="Карта книги "
+        style
+            include ../public/stylesheets/style.css
+    body
+        input(id="id" readonly value=bookId)
+        div(class="column-box")
+            div(class="row-box")
+                div(class="column-box")
+                    div(id="new-reader")
+                        h4 Give book to:
+                        input(id="readerName" placeholder="Name of reader" required)
+                        input(id="dateOfBegin" type='date' placeholder="Date of start" required)
+                        input(id="dateOfEnd" type='date' placeholder="Date of finish" required)
+                        button(id="add") Give book
+                    a(href='/' class="home-link") Return to the list of books
+                div(id="book-card" class="column-box title")
+                    div
+                        h1(id="name") "#{bookId}"
+                        input(id="editName" class="hidden" placeholder="Enter name")
+                        div(class="row-box")
+                            div(class="card-element")
+                                h5 Author:
+                                p(id="author")
+                                input(id="editAuthor" class="hidden" placeholder="Enter author")
+                                div(class="card-element")
+                                    h5 Genre:
+                                    p(id="genre")
+                                    input(id="editGenre" class="hidden" placeholder="Enter genre")
+                                    div(class="card-element")
+                                        h5 About:
+                                        p(id="about")
+                                        input(id="editAbout" class="hidden" placeholder="Enter about")
+                            div(class="card-element")
+                                h5 Date of release:
+                                p(id="releaseDate")
+                                input(id="editDateOfRelease" class="hidden" type="date" placeholder="Enter published")
+
+
+                        div(class="row-box")
+                            div(class="card-element")
+                                h5 In stock:
+                                p(id="stock")
+                            div(class="card-element")
+                                h5 Expired:
+                                p(id="expired")
+                        div(class="card-element")
+                            h5 List of readers:
+                            p(id="allReaders")
+                        div(class="card-element")
+                            h5 Now reads:
+                            p(id="currentReader")
+                        div(id="return-element")
+                            button(id="return") Return the book
+                        div(id="edit-panel")
+                            button(id="edit") Edit the book
+                            button(id="cancelEdit" class="hidden") Cancel
+                            button(id="saveEdit" class="hidden") Save
+
+
+
+    script
+        include ../public/javascripts/card.js

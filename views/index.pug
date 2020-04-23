@@ -1,0 +1,28 @@
+doctype
+html(lang="ru")
+    head
+        meta(charset="utf-8")
+        title="Library"
+        style
+            include ../public/stylesheets/style.css
+    body
+        div(class="column-box title")
+            h1 Welcome to the library
+        div(class="column-box")
+            div(class="row-box")
+                div(id="control")
+                    h4 Manage library:
+                    button(id="sort-stock") Filter by availability
+                    button(id="sort-expire") Filter by date
+                div(id="new-book")
+                    h4 Add a book:
+                    input(id="name" placeholder="Name of book" required)
+                    input(id="author" placeholder="Author" required)
+                    input(id="genre" placeholder="Genre" required)
+                    input(id="about" placeholder="About" required)
+                    input(id="releaseDate" type='date' placeholder="Date of release" required)
+                    button(id="add") Add
+        div(id="tab-books" class="column-box")
+            h3 List of books
+    script
+        include ../public/javascripts/main.js

@@ -1,0 +1,160 @@
+body {
+  padding: 1px;
+  font: 18px "Lucida Grande", Andale Mono, monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a, a:hover {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.hidden{
+  display: none;
+}
+
+.title {
+  color: #8B0000;
+}
+
+.column-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-box {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+button {
+  padding: 15px;
+  margin-top: 15px;
+  border: 2px solid darkred;
+  border-radius: 4px;
+  font: inherit;
+  color: inherit;
+  background-color: #FFFFF0;
+  cursor: pointer;
+}
+
+#control {
+  background-color: #EEE8AA;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 440px;
+  margin-left: 300px;
+}
+
+#control h4 {
+  text-align: center;
+  text-decoration: darkred;
+  margin-bottom: 10px;
+}
+
+
+#tab-books, #book-card {
+  width: 350px;
+  background-color: #FFE4B5;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  /*margin: 10px;*/
+  margin-top: -620px;
+}
+
+#new-book,  #new-reader{
+  background-color: #FFFACD;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  height: 400px;
+}
+
+#new-reader {
+  height: 300px;
+  width: 260px
+}
+
+#new-reader h4 {
+  font-size: 20px;
+  margin-bottom: 1px;
+}
+
+#new-book input, #new-reader input{
+  height: 40px;
+  padding-left: 10px;
+  margin-bottom: 15px;
+  outline: none;
+  border: 1px solid #3a3a3a;
+  border-radius: 2px;
+}
+
+#book-card {
+
+  margin-top: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 450px
+}
+
+#editName {
+  width: 97%;
+  margin: 0 auto;
+  height: 40px;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.book-element {
+  background-color: #FFFFE0;
+  margin-top: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-element {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  min-width: 100px;
+}
+
+.card-element h5, .card-element p, .card-element input{
+  margin: 0;
+  font-size: 14px;
+}
+
+.card-element input {
+  height: 20px;
+  max-width: 200px;
+  min-width: 100px;
+  padding-left: 10px;
+}
+
+#id{
+  display: none;
+}
+
+#edit-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+#return-element button, #edit-panel button{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.home-link {
+  margin: 0 auto;
+  color: #800000;
+  font-weight: 700;
+}
